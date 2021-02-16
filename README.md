@@ -30,7 +30,7 @@ fnor_o <= not (b_i or (not a_i)) or (not (c_i or b_i));
 ### EDA playground link:
 https://www.edaplayground.com/x/wFJq
 
-## 2. Verification of Distributive laws
+## 3. Verification of Distributive laws
 
 ### VHDL code:
 ```
