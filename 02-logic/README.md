@@ -49,4 +49,6 @@ link to EDA
   | **11** | 1 | 1 | 0 | 1 |
   | **10** | 0 | 0 | 1 | 0 |
   
+### Equations of simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function:
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/Equations_SoP_PoS.gif)
   
