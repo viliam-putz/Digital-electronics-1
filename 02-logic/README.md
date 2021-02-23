@@ -56,7 +56,7 @@ link to EDA
 link to EDA
 
 ## VHDL architecture from design file
-```
+```vhdl
 entity comparator_4bit is
     port(
       a_i           : in  std_logic_vector(4 - 1 downto 0);
