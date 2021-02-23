@@ -62,17 +62,14 @@ entity comparator_4bit is
       a_i           : in  std_logic_vector(4 - 1 downto 0);
       b_i           : in  std_logic_vector(4 - 1 downto 0);
 
-        -- COMPLETE ENTITY DECLARATION
 
-		B_greater_A_o : out std_logic;       -- B is greater than A
+	B_greater_A_o : out std_logic;       -- B is greater than A
         B_equals_A_o  : out std_logic;       -- B equals A
         B_less_A_o    : out std_logic       -- B is less than A
     );
 end entity comparator_4bit;
 
-------------------------------------------------------------------------
--- Architecture body for 4-bit binary comparator
-------------------------------------------------------------------------
+
 architecture Behavioral of comparator_4bit is
 begin
 
@@ -87,7 +84,7 @@ end architecture Behavioral;
 ```
 p_stimulus : process
     begin
-        -- Report a note at the begining of stimulus process
+
         report "Stimulus process started" severity note;
 
 
@@ -142,7 +139,7 @@ p_stimulus : process
         
 
 
-        -- Report a note at the end of stimulus process
+
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
