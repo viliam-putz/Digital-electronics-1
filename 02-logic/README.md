@@ -52,3 +52,9 @@ link to EDA
 ### Equations of simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/Equations_SoP_PoS.gif)
   
+## 4-bit comparator
+link to EDA
+
+## Console output
+
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/console.png)
