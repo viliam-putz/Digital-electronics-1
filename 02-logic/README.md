@@ -62,8 +62,8 @@ link to EDA
 ```vhdl
 entity comparator_4bit is
     port(
-      a_i           : in  std_logic_vector(4 - 1 downto 0);
-      b_i           : in  std_logic_vector(4 - 1 downto 0);
+               a_i    : in  std_logic_vector(4 - 1 downto 0);
+               b_i    : in  std_logic_vector(4 - 1 downto 0);
 
 
 	B_greater_A_o : out std_logic;       -- B is greater than A
