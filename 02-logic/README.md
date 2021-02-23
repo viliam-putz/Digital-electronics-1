@@ -25,7 +25,7 @@
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
 ### Karnaugh map - B is greater than A
-
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/kmap1,jpg)
   |  | **00** | **01** | **11** | **10** |
   | :-: | :-: | :-: | :-: | :-: |
   | **00** | 0 | 0 | 0 | 0 |
