@@ -57,9 +57,9 @@
 https://www.edaplayground.com/x/8UA4
 
 ## 4-bit comparator
-link to EDA
 
-## VHDL architecture from design file
+
+### VHDL architecture from design file
 ```vhdl
 entity comparator_4bit is
     port(
@@ -84,7 +84,7 @@ begin
 
 end architecture Behavioral;
 ```
-## VHDL stimulus process from testbench file
+### VHDL stimulus process from testbench file
 ```vhdl
 p_stimulus : process
     begin
@@ -149,7 +149,7 @@ p_stimulus : process
     end process p_stimulus;
 
 ```
-## Console output
+### Console output
 
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/console.png)
 
