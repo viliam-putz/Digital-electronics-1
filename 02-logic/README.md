@@ -81,7 +81,7 @@ begin
 end architecture Behavioral;
 ```
 ## VHDL stimulus process from testbench file
-```
+```ruby
 p_stimulus : process
     begin
 
