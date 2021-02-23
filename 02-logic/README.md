@@ -50,14 +50,6 @@
   | **10** | 0 | 0 | 1 | 0 |
   
   
-  ### Karnaugh map - B is less than A
-  |   A1 A0   |
-  | :-: | :-: | :-: | :-: | :-: |
-  |  | **00** | **01** | **11** | **10** |  
-  | **00** | 0 | 1 | 1 | 1 |
-  | **01** | 0 | 0 | 1 | 1 |
-  | **11** | 0 | 0 | 0 | 0 |
-  | **10** | 0 | 0 | 1 | 0 |
 ### Equations of simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/Equations_SoP_PoS.gif)
 
