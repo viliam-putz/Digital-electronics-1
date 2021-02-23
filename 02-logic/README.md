@@ -1,7 +1,7 @@
 # Assignment 2
 
 ## 2-bit comparator
-link to EDA
+
 
 ### 2-bit comparator truth table
 
@@ -51,7 +51,10 @@ link to EDA
   
 ### Equations of simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/Equations_SoP_PoS.gif)
-  
+
+### EDA playground link:
+https://www.edaplayground.com/x/8UA4
+
 ## 4-bit comparator
 link to EDA
 
@@ -148,3 +151,6 @@ p_stimulus : process
 ## Console output
 
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/console.png)
+
+### EDA playground link:
+https://www.edaplayground.com/x/fgEn
