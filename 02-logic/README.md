@@ -46,7 +46,7 @@
   | :-: | :-: | :-: | :-: | :-: |
   | **00** | 0 | 1 | 1 | 1 |
   | **01** | 0 | 0 | 1 | 1 |
-  | **11** | 1 | 1 | 0 | 1 |
+  | **11** | 0 | 0 | 0 | 0 |
   | **10** | 0 | 0 | 1 | 0 |
   
 ### Equations of simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function:
