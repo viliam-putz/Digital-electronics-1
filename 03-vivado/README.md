@@ -1,7 +1,7 @@
 # Assignment 3
 ## Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
 | **Switch** | **Connection** | **LED** | **Connection** |
-| :-: | :-: | :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: | :-: |
 | SW0 | J15 | LED0 | H17 |
 | SW1 | L16 | LED1 | K15 |
 | SW2 | M13 | LED2 | J13 |
@@ -23,9 +23,9 @@
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
 begin
-f_o <= a_i when (sel_i="00") else
-b_i when (sel_i="01") else
-c_i when (sel_i="10") else
-d_i;
-end architecture Behavioral;
+  f_o <= a_i when (sel_i="00") else
+         b_i when (sel_i="01") else
+         c_i when (sel_i="10") else
+         d_i;
+  end architecture Behavioral;
 ```
