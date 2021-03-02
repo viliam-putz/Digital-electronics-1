@@ -18,8 +18,8 @@
 | SW13 | U12 | LED13 | V14 |
 | SW14 | U11 | LED14 | V12 |
 | SW15 | V10 | LED15 | V11 |
-
 ## Two-bit wide 4-to-1 multiplexer
+### VHDL architecture
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
 begin
@@ -29,3 +29,26 @@ begin
          d_i;
   end architecture Behavioral;
 ```
+### VHDL stimulus process
+```vhdl
+p_stimulus : process
+           begin
+                
+                s_a <= "11"; 
+                s_b <= "01";  
+                s_c <= "10"; 
+                s_d <= "00";
+                
+                s_addr <= "00"; 
+                wait for 10ms;
+                s_addr <= "01"; 
+                wait for 10ms;
+                s_addr <= "10"; 
+                wait for 10ms;
+                s_addr <= "11"; 
+                wait for 10ms;
+                
+                wait;
+           end process p_stimulus;
+```
+
