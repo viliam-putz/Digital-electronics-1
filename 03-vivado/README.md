@@ -52,23 +52,40 @@ p_stimulus : process
 ### Screenshot with simulated time waveforms
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado_screen.png)
 
-Tutorial
+## Vivado tutorial
+### Create new project:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/1.png)
+### Click next:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/2.png)
+### Enter project name:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/3.png)
+### Choose RTL project:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/4.png)
+### Select target and simulator language and create a new source file:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/5.png)
+### Select file type and enter source file name, click OK:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/6.png)
+### Click next:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/7.png)
+### Create constraints file:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/8.png)
+### Enter file name:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/9.png)
+### Click next:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/10.png)
+### Go to "Boards" panel:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/11.png)
+### Select board:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/12.png)
+### Click finish:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/13.png)
+### Define Module, click OK:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/14.png)
+### Click YES:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/15.png)
+### To add simulation file, click on "Add Sources:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/16.png)
+
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/17.png)
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/18.png)
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/19.png)
