@@ -51,3 +51,6 @@ p_stimulus : process
 ```
 ### Screenshot with simulated time waveforms
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado_screen.png)
+
+Tutorial
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/1.png)
