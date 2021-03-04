@@ -85,8 +85,19 @@ p_stimulus : process
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/15.png)
 ### To add simulation file, click on "Add Sources:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/16.png)
-
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/17.png)
+### Click "Add or create simulation sources":
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/21.png)
+### Create File:
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/22.png)
+### Choose File type, enter name, click OK:
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/23.png)
+### Click "finish":
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/24.png)
+### Define module:
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/25.png)
+### Run Simulation:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/18.png)
+### Click "Run Behavioral Simulation":
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/19.png)
+### To edit source code click here:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/20.png)
