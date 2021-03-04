@@ -49,4 +49,5 @@ p_stimulus : process
         wait;
     end process p_stimulus;
 ```
-
+### Screenshot with simulated time waveforms
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado_screen.png)
