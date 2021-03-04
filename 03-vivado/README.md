@@ -83,7 +83,7 @@ p_stimulus : process
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/14.png)
 ### Click YES:
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/15.png)
-### To add simulation file, click on "Add Sources:
+### To add simulation file, click "Add Sources":
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/16.png)
 ### Click "Add or create simulation sources":
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/03-vivado/21.png)
