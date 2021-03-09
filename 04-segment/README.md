@@ -110,6 +110,7 @@ p_stimulus : process
 ### Screenshot with simulated time waveforms
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/04-segment/screen1.png)
 
+
 ### VHDL code from source file top.vhd
 ```vhdl
 hex2seg : entity work.hex_7seg
