@@ -125,3 +125,37 @@ hex2seg : entity work.hex_7seg
             seg_o(0) => CG
         );
 ```
+### LEDs(7:4) truth table
+| **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0   | 0000 | 1 | 0 | 0 | 0 |
+| 1   | 0001 | 0 | 0 | 1 | 1 |
+| 2 | 0010 | 0 | 0 | 0 | 1 |
+| 3 | 0011 | 0 | 0 | 1 | 0 |
+| 4 | 0100 | 0 | 0 | 0 | 1 |
+| 5 | 0101 | 0 | 0 | 1 | 0 |
+| 6 | 0110 | 0 | 0 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 1 | 0 |
+| 8 | 1000 | 0 | 0 | 0 | 1 |
+| 9 | 1001 | 0 | 0 | 1 | 0 |
+| A | 1010 | 0 | 1 | 0 | 0 |
+| b | 1011 | 0 | 1 | 1 | 0 |
+| C | 1100 | 0 | 1 | 0 | 0 |
+| d | 1101 | 0 | 1 | 1 | 0 |
+| E | 1110 | 0 | 1 | 0 | 0 |
+| F | 1111 | 0 | 1 | 1 | 0 |
+
+### VHDL code for LEDs(7:4)
+```vhdl
+LED(4) <= '1' when SW = "0000" else '0';
+    LED(5) <= '1' when (SW > "1001") else '0';
+    LED(6) <= '1' when (SW = "0001" or SW = "0011" or SW = "0101" or 
+                        SW = "0111" or SW = "1001" or SW = "1011" or 
+                        SW = "1101" or SW = "1111") 
+                  else '0';
+    LED(7) <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or 
+                        SW = "1000") 
+                  else '0';
+```
+### Screenshot with simulated time waveforms
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/04-segment/scr2.png)
