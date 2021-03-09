@@ -1,5 +1,6 @@
 # Assignment 4
-## Table with connection of 7-segment displays on Nexys A7 board
+## Part 1
+### Table with connection of 7-segment displays on Nexys A7 board
 | **Segment** | **I/O Port** | **Anode** | **I/O Port** | 
 | :-: | :-: |  :-: | :-: |
 | CA | T10 | AN0 | J17 | 
@@ -33,6 +34,7 @@
 | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0110000 |
 | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0111000 |
 
+## Part 2 - Seven-segment display decoder
 ### VHDL architecture from source file hex_7seg.vhd
 ```vhdl
 begin
@@ -125,6 +127,7 @@ hex2seg : entity work.hex_7seg
             seg_o(0) => CG
         );
 ```
+## Part 3 - LED(7:4) indicators
 ### LEDs(7:4) truth table
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
