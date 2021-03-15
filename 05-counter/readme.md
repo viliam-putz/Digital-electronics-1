@@ -74,8 +74,13 @@ p_stimulus : process
 end architecture testbench;
 ```
 ### Screenshots with simulated time waveforms
+#### Full scale
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen1.png)
+#### 0-260ns
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen2.png)
+#### 260-500ns
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen3.png)
+#### 500-760ns
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen4.png)
+#### -800ns
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen5.png)
