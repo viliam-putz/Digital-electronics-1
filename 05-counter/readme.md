@@ -132,4 +132,4 @@ end architecture testbench;
         );
 ```
 ### Image of the top layer including both counters
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/schema.jpg.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/schema.jpg)
