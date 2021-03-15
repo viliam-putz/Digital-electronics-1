@@ -110,7 +110,7 @@ end architecture testbench;
             clk => CLK100MHZ,
             reset => BTNC,
             en_i => s_en,
-            cnt_up_i => SW,
+            cnt_up_i => SW(0),
             cnt_o => s_cnt
         );
 
