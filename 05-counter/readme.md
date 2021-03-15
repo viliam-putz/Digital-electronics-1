@@ -73,3 +73,5 @@ p_stimulus : process
 
 end architecture testbench;
 ```
+### Screenshot with simulated time waveforms; always display all inputs and outputs
+
