@@ -92,7 +92,7 @@ end architecture testbench;
     -- Instance (copy) of clock_enable entity
     clk_en0 : entity work.clock_enable
         generic map(
-            g_MAX => 250000000 -- 250ms
+            g_MAX => 100000000
         )
         port map(
             clk => CLK100MHZ,
