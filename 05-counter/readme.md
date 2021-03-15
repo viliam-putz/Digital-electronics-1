@@ -73,5 +73,9 @@ p_stimulus : process
 
 end architecture testbench;
 ```
-### Screenshot with simulated time waveforms; always display all inputs and outputs
-
+### Screenshots with simulated time waveforms
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen1.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen2.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen3.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen4.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/05-counter/screen5.png)
