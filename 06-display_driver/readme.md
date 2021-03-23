@@ -198,4 +198,5 @@ end architecture Behavioral;
 
 ```
 ## 3. Eight-digit driver
+### Image of the driver schematic
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/8digits.jpg)
