@@ -197,5 +197,5 @@ begin
 end architecture Behavioral;
 
 ```
-## Eight-digit driver
+## 3. Eight-digit driver
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/8digits.jpg)
