@@ -39,25 +39,20 @@ p_mux : process(s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
 -- This work is licensed under the terms of the MIT license.
 --
 ------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
-
 ------------------------------------------------------------------------
 -- Entity declaration for testbench
 ------------------------------------------------------------------------
 entity tb_driver_7seg_4digits is
     -- Entity of testbench is always empty
 end entity tb_driver_7seg_4digits;
-
 ------------------------------------------------------------------------
 -- Architecture body for testbench
 ------------------------------------------------------------------------
 architecture testbench of tb_driver_7seg_4digits is
-
     -- Local constants
     constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
-
     --Local signals
     signal s_clk_100MHz : std_logic;
     signal s_reset : std_logic;
@@ -113,7 +108,6 @@ begin
         s_reset <= '0';
         wait for 660 ns;
     end process p_reset_gen;
-
     --------------------------------------------------------------------
     -- Data generation process
     --------------------------------------------------------------------
@@ -132,6 +126,6 @@ begin
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
-
+    
 end architecture testbench;
 ```
