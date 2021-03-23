@@ -103,7 +103,7 @@ begin
         wait for 10 ns;
         -- Reset activated
         s_reset <= '1';
-        wait for 60 ns;
+        wait for 53 ns;
         -- Reset deactivated
         s_reset <= '0';
         wait;
