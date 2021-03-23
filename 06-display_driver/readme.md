@@ -100,13 +100,13 @@ begin
     p_reset_gen : process
     begin
         s_reset <= '0';
-        wait for 28 ns;
+        wait for 10 ns;
         -- Reset activated
         s_reset <= '1';
-        wait for 53 ns;
+        wait for 60 ns;
         -- Reset deactivated
         s_reset <= '0';
-        wait for 660 ns;
+        wait;
     end process p_reset_gen;
     --------------------------------------------------------------------
     -- Data generation process
