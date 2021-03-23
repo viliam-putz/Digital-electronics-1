@@ -130,11 +130,11 @@ begin
 end architecture testbench;
 ```
 ### Screenshots with simulated time waveforms
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen1.png)
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen2.png)
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen3.png)
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen4.png)
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen5.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/sim_screen1.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/sim_screen2.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/sim_screen3.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/sim_screen4.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/sim_screen5.png)
 
 ### Listing of VHDL architecture of the top layer
 ```vhdl
