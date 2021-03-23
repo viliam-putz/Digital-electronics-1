@@ -190,7 +190,7 @@ begin
             seg_o(1)    => CF,
             seg_o(0)    => CG,
             
-            dig_o    => AN(4 - 1 downto 0),
+            dig_o       => AN(4 - 1 downto 0),
             dp_i        => "0111",
             dp_o        => DP
         );
