@@ -129,3 +129,9 @@ begin
     
 end architecture testbench;
 ```
+### Screenshots with simulated time waveforms
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen1.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen2.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen3.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen4.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/screen5.png)
