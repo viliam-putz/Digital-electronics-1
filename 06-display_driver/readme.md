@@ -13,15 +13,15 @@ p_mux : process(s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
                 dp_o  <= dp_i(3);
                 dig_o <= "0111";
             when "10" =>
-                    s_hex <= data2_i;
-                     dp_o  <= dp_i(2);
-                    dig_o <= "1011";
+                s_hex <= data2_i;
+                dp_o  <= dp_i(2);
+                dig_o <= "1011";
             when "01" =>
-            s_hex <= data1_i;
+                s_hex <= data1_i;
                 dp_o  <= dp_i(1);
                 dig_o <= "1101";
             when others =>
-            s_hex <= data0_i;
+                s_hex <= data0_i;
                 dp_o  <= dp_i(0);
                 dig_o <= "1110";
         end case;
@@ -70,16 +70,16 @@ begin
     -- (Unit Under Test)
     uut_driver_7seg_4digits : entity work.driver_7seg_4digits
     port map (
-        clk => s_clk_100Mhz,
-        reset => s_reset,
+        clk     => s_clk_100Mhz,
+        reset   => s_reset,
         data0_i => s_data0,
         data1_i => s_data1,
         data2_i => s_data2,
         data3_i => s_data3,
-        dp_i => s_dp_i,
-        dp_o => s_dp_o,        
-        seg_o => s_seg,
-        dig_o => s_dig
+        dp_i    => s_dp_i,
+        dp_o    => s_dp_o,        
+        seg_o   => s_seg,
+        dig_o   => s_dig
     );
     --------------------------------------------------------------------
     -- Clock generation process
