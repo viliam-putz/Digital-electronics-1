@@ -15,7 +15,7 @@
    | ![](eq_uparrow.png) | 0 | 1 | 0 | 0 | Reset |
    | ![](eq_uparrow.png) | 0 | 1 | 1 | 0 | Reset |
    | ![](eq_uparrow.png) | 1 | 0 | 0 | 1 | Set |
-   | ![](eq_uparrow.pngg) | 1 | 0 | 1 | 1 | Set |
+   | ![](eq_uparrow.png) | 1 | 0 | 1 | 1 | Set |
    | ![](eq_uparrow.png) | 1 | 1 | 0 | 1 | Toggle |
    | ![](eq_uparrow.png) | 1 | 1 | 1 | 0 | Toggle |
 
