@@ -1,5 +1,8 @@
 # Assignment 7
 ## 1. Preparation tasks
+![](eq1.png)
+![](eq2.png)
+![](eq3.png)
 ### Characteristic equations and completed tables for D, JK, T flip-flops
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
