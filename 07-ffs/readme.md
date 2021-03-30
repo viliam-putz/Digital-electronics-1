@@ -1,8 +1,8 @@
 # Assignment 7
 ## 1. Preparation tasks
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/eq1.png)
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/eq2.png)
-![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/06-display_driver/eq3.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/eq1.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/eq2.png)
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/eq3.png)
 ### Characteristic equations and completed tables for D, JK, T flip-flops
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
