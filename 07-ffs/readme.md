@@ -138,8 +138,7 @@ p_d_ff_arst : process (clk, arst)
     begin                                         
         if (arst = '1') then                      
             q     <= '0';                         
-            q_bar <= '1';
-                                    
+            q_bar <= '1';                                    
         elsif  rising_edge(clk) then                    
             q     <= d;                               
             q_bar <= not d;                       
@@ -202,3 +201,252 @@ p_t_ff_rst : process (clk)
         end if;
     end process p_t_ff_rst;
 ```
+### Listing of VHDL clock, reset and stimulus processes from the testbench files
+#### Listing of VHDL clock, reset and stimulus process - tb_d_ff_arst
+```vhdl
+p_clk_gen : process
+        begin
+            while now < 750 ns loop         -- 75 periods of 100MHz clock
+                s_clk_100MHz <= '0';
+                wait for c_CLK_100MHz_PERIOD / 2;
+                s_clk_100MHz <= '1';
+                wait for c_CLK_100MHz_PERIOD / 2;
+            end loop;
+            wait;
+        end process p_clk_gen;
+    ------------------------------------------
+    --Reset generation process
+    ------------------------------------------    
+     p_reset_gen : process
+        begin
+            s_arst <=  '0';
+        wait for 20 ns;
+        s_arst <=  '1';
+        wait for 20 ns;        
+        s_arst <=  '0';
+        wait for 20 ns;
+        s_arst <=  '1';
+        wait for 20 ns;       
+        s_arst <=  '0';   
+        wait;
+        end process p_reset_gen;
+    ------------------------------------------
+    --Data generation process
+    ------------------------------------------ 
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        s_d     <= '0';
+        wait for 10 ns;
+        s_d     <= '1';
+        wait for 10 ns;
+        s_d     <= '0';
+        wait for 10 ns;
+        s_d     <= '1';        
+        assert(s_q =  '1' and s_q_bar = '0')
+        report "s_q = 1, s_q_bar = 0" severity error;       
+        wait for 10 ns;
+        s_d     <= '0';
+        wait for 10 ns;
+        s_d     <= '1';
+        wait for 10 ns;
+        s_d     <= '0';      
+        assert(s_q =  '0' and s_q_bar = '1')
+        report "s_q = 0, s_q_bar = 1" severity error;      
+        wait for 10 ns;
+        s_d     <= '1';
+        wait for 10 ns;
+        s_d     <= '0';
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
+#### Listing of VHDL clock, reset and stimulus process - tb_d_ff_rst
+```vhdl
+p_clk_gen : process
+        begin
+            while now < 750 ns loop         -- 75 periods of 100MHz clock
+                s_clk_100MHz <= '0';
+                wait for c_CLK_100MHz_PERIOD / 2;
+                s_clk_100MHz <= '1';
+                wait for c_CLK_100MHz_PERIOD / 2;
+            end loop;
+            wait;
+        end process p_clk_gen;        
+    ------------------------------------------
+    --Reset generation process
+    ------------------------------------------    
+     p_reset_gen : process
+        begin
+            s_rst <=  '0';
+        wait for 20 ns;
+        s_rst <=  '1';
+        wait for 20 ns;        
+        s_rst <=  '0';
+        wait for 20 ns;
+        s_rst <=  '1';
+        wait for 20 ns;        
+        s_rst <=  '0';
+        wait;
+        end process p_reset_gen;      
+    ------------------------------------------
+    --Data generation process
+    ------------------------------------------ 
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        s_d     <= '0';
+        wait for 10 ns;
+        s_d     <= '1';
+        wait for 10 ns;
+        s_d     <= '0';
+        wait for 10 ns;
+        s_d     <= '1';      
+        assert(s_q =  '1' and s_q_bar = '0')
+        report "s_q = 1, s_q_bar = 0" severity error;       
+        wait for 10 ns;
+        s_d     <= '0';
+        wait for 10 ns;
+        s_d     <= '1';
+        wait for 10 ns;
+        s_d     <= '0';       
+        assert(s_q =  '0' and s_q_bar = '1')
+        report "s_q = 0, s_q_bar = 1" severity error;       
+        wait for 10 ns;
+        s_d     <= '1';
+        wait for 10 ns;
+        s_d     <= '0';
+        report "Stimulus process finished" severity note;
+    wait;
+    end process p_stimulus;
+```
+
+#### Listing of VHDL clock, reset and stimulus process - tb_jk_ff_rst
+```vhdl
+p_clk_gen : process
+    begin
+        while now < 750 ns loop         -- 75 periods of 100MHz clock
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHz_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHz_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+    ------------------------------------------
+    --Reset generation process
+    ------------------------------------------     
+     p_reset_gen : process
+        begin
+            s_rst <=  '0';
+        wait for 40 ns;        
+        s_rst <=  '1';
+        wait for 40 ns;        
+        s_rst <=  '0';   
+            wait;
+        end process p_reset_gen;
+    ------------------------------------------
+    --Data generation process
+    ------------------------------------------    
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;     
+        s_j     <= '0';
+        s_k     <= '0';
+        wait for 10 ns;
+        s_j     <= '0';
+        s_k     <= '1';
+        wait for 10 ns;
+        s_j     <= '1';
+        s_k     <= '0';
+        wait for 10 ns;
+        s_j     <= '1';
+        s_k     <= '1';
+        wait for 10 ns;      
+        assert(s_q =  '1' and s_q_bar = '0')
+        report "s_q = 1, s_q_bar = 0" severity error;        
+        s_j     <= '0';
+        s_k     <= '0';
+        wait for 10 ns;
+        s_j     <= '0';
+        s_k     <= '1';
+        wait for 10 ns;
+        s_j     <= '1';
+        s_k     <= '0';
+        wait for 10 ns;
+        s_j     <= '1';
+        s_k     <= '1';        
+        assert(s_q =  '1' and s_q_bar = '0')
+        report "s_q = 1, s_q_bar = 0" severity error;
+        wait for 10 ns;
+        s_j     <= '0';
+        s_k     <= '0';
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
+
+#### Listing of VHDL clock, reset and stimulus process - tb_t_ff_rst
+```vhdl
+p_clk_gen : process
+    begin
+        while now < 750 ns loop         -- 75 periods of 100MHz clock
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHz_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHz_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;    
+    ------------------------------------------
+    --Reset generation process
+    ------------------------------------------    
+     p_reset_gen : process
+        begin
+            s_rst <=  '1';
+        wait for 10 ns;
+        s_rst <=  '0';
+        wait for 20 ns;
+        s_rst <=  '1';
+        wait for 20 ns;
+        s_rst <=  '0';
+        wait;
+        end process p_reset_gen; 
+    ------------------------------------------
+    --Data generation process
+    ------------------------------------------ 
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        s_t     <= '0';
+        wait for 20 ns;
+        s_t     <= '1';
+        wait for 10 ns;
+        s_t     <= '0';
+        wait for 10 ns;
+        s_t     <= '1';
+        assert(s_q =  '1' and s_q_bar = '0')
+        report "s_q = 1, s_q_bar = 0" severity error;    
+        wait for 10 ns;
+        s_t     <= '1';
+        wait for 10 ns;
+        s_t     <= '0';
+        wait for 10 ns;
+        s_t     <= '1';
+        assert(s_q =  '0' and s_q_bar = '1')
+        report "s_q = 0, s_q_bar = 1" severity error;
+        wait for 10 ns;        
+        s_t     <= '0';
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus; 
+```
+### Screenshots with simulated time waveforms
+#### d_ff_arst
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/screen2.png)
+#### d_ff_rst
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/screen3.png)
+#### jk_ff_rst
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/screen4.png)
+#### t_ff_rst
+![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/screen5.png)
