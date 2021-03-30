@@ -450,3 +450,7 @@ p_clk_gen : process
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/screen4.png)
 #### t_ff_rst
 ![](https://github.com/viliam-putz/Digital-electronics-1/blob/main/07-ffs/screen5.png)
+
+## 3. Shift register
+
+
