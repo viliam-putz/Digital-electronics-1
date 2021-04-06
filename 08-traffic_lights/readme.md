@@ -125,4 +125,8 @@ p_output_fsm : process(s_state)
         end case;
     end process p_output_fsm;
 ```
-## 3. Smart controller
+### Screenshot(s) of the simulation, from which it is clear that controller works correctly
+![](screen1.png)
+![](screen2.png)
+![](screen3.png)
+![](screen4.png)
