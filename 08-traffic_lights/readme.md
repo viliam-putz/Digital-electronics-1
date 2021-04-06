@@ -141,6 +141,9 @@ p_output_fsm : process(s_state)
 | `STOP2`      | red    | red | 1 s |  |
 | `SOUTH_GO`   | green  | red | 4 s | South = 1, West = 0 |
 | `SOUTH_WAIT` | yellow | red | 2 s |  |
+### State diagram
+![](state2.png)
+### Listing of VHDL code of sequential process `p_smart_traffic_fsm` with syntax highlighting
 ```vhdl
 p_smart_traffic_fsm : process(clk)
     begin
