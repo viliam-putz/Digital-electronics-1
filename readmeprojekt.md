@@ -1,6 +1,6 @@
-### Bargraph
-
-| PIN | RGB LEDs |
+## Bargraph
+### RGB LEDs 
+| PIN | LEDs |
 | :-: | :-: |
 | E1 | led0_b |
 | F6 | led0_g |
@@ -15,6 +15,7 @@
 | H6 | led3g |
 | K1 | led3_r |
 
+### LEDs
 | PIN | LED |
 | :-: | :-: |
 | H5 | led[0] |
