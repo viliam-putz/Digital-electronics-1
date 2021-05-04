@@ -1,6 +1,6 @@
 ## Bargraph
 ### RGB LEDs 
-| Board PIN | LEDs |
+| Board PIN | LED |
 | :-: | :-: |
 | E1 | led0_b |
 | F6 | led0_g |
