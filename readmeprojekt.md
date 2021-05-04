@@ -23,7 +23,7 @@
 | T9 | led[2] |
 | T10 | led[3] |
 
-### HC-SR04 Sensor
+## HC-SR04 Sensor
 | HC-SR04 | BOARD - JA_Pmod |
 | :-: | :-: |
 | echo_i[0] | PIN A11 |
