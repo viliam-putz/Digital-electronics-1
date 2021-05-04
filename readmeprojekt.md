@@ -1,4 +1,4 @@
-| Pin | LED |
+| PIN | RGB LEDs |
 | :-: | :-: |
 | E1 | led0_b |
 | F6 | led0_g |
@@ -12,3 +12,10 @@
 | K2 | led3_b |
 | H6 | led3g |
 | K1 | led3_r |
+
+| PIN | LED |
+| :-: | :-: |
+| H5 | led[0] |
+| J5 | led[1] |
+| T9 | led[2] |
+| T10 | led[3] |
