@@ -16,7 +16,7 @@
 | K1 | led3_r |
 
 ### LEDs
-| BOARD PIN | LED |
+| Board PIN | LED |
 | :-: | :-: |
 | H5 | led[0] |
 | J5 | led[1] |
