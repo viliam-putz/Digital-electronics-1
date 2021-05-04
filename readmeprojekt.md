@@ -32,7 +32,7 @@
 | trig_o[1] | PIN K16 |
 
 ## Switches
-| Board PIN | Switch |
+| Board PIN | Pwm |
 | :-: | :-: |
 | A8 | sw_i[0] |
 | C11 | sw_i[1] |
