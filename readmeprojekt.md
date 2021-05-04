@@ -19,3 +19,10 @@
 | J5 | led[1] |
 | T9 | led[2] |
 | T10 | led[3] |
+
+| HC-SR04 | BOARD - JA_Pmod |
+| :-: | :-: |
+| echo_i[0] | PIN A11 |
+| trig_o[0] | PIN D12 |
+| echo_i[1] | PIN A18 |
+| trig_o[1] | PIN K16 |
