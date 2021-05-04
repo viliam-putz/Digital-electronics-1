@@ -36,3 +36,8 @@
 | :-: | :-: |
 | A8 | sw_i[0] |
 | C11 | sw_i[1] |
+
+## PWM 
+| Board JD_Pmod | Switch |
+| :-: | :-: |
+| PIN F3 | pwm_o |
