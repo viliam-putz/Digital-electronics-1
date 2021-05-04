@@ -26,3 +26,4 @@
 | trig_o[0] | PIN D12 |
 | echo_i[1] | PIN A18 |
 | trig_o[1] | PIN K16 |
+
