@@ -4,8 +4,8 @@
 | :-: | :-: |
 | E1 | led0_b |
 | F6 | led0_g |
-| G4 | eld0_r |
-| G6 | eld1_b |
+| G6 | eld0_r |
+| G4 | eld1_b |
 | J4 | led1_g |
 | G3 | led1_r |
 | H4 | led2_b |
